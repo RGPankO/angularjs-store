@@ -1,0 +1,15 @@
+<div class="basket">
+    <header ng-click="checkBasket()"><h2>Items in your basket</h2></header>
+    <section>
+        <ul ng-if="products.length" class="products">
+            <li ng-repeat="product in products" class="product" basket-item></li>
+        </ul>
+        <div ng-if="products.length" class="basket-total">
+            <h3>Total: {{basketTotal.total | CurrencyConverter:'£' }}</h3>
+        </div>
+
+        <div ng-if="!products.length" class="no-products">
+            Add some products to your basket
+        </div>
+    </section>
+</div>

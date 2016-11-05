@@ -1,0 +1,102 @@
+/* line 1, ../sass/main.scss */
+.main-menu {
+  padding: 0;
+  margin: 1rem 0 5rem 0;
+  text-align: center;
+}
+/* line 6, ../sass/main.scss */
+.main-menu li {
+  padding: 0.5rem;
+  display: inline-block;
+  font-size: 2rem;
+  border: 1px black solid;
+}
+
+/* line 14, ../sass/main.scss */
+.products {
+  font-size: 0;
+}
+/* line 17, ../sass/main.scss */
+.products .product {
+  font-size: 1.6rem;
+  display: inline-block;
+  vertical-align: top;
+  float: none;
+}
+/* line 23, ../sass/main.scss */
+.products .product.in-basket {
+  background-color: green;
+}
+/* line 27, ../sass/main.scss */
+.products .product .title {
+  font-size: 2rem;
+}
+/* line 31, ../sass/main.scss */
+.products .product .description {
+  font-size: 1.3rem;
+}
+/* line 35, ../sass/main.scss */
+.products .product .amount {
+  display: inline-block;
+  width: 3rem;
+  margin: 0;
+  padding: 0.3rem;
+}
+/* line 42, ../sass/main.scss */
+.products .product .group-add {
+  text-align: center;
+}
+/* line 45, ../sass/main.scss */
+.products .product .group-add .add-item {
+  clear: both;
+  display: block;
+  margin: 1rem auto 0;
+}
+/* line 52, ../sass/main.scss */
+.products .product img {
+  max-width: 100%;
+}
+/* line 56, ../sass/main.scss */
+.products .product .glyphicon {
+  cursor: pointer;
+}
+
+/* line 65, ../sass/main.scss */
+.basket .products {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-top: 1px solid black;
+}
+/* line 72, ../sass/main.scss */
+.basket .basket-total {
+  margin-top: 1rem;
+  text-align: center;
+}
+/* line 77, ../sass/main.scss */
+.basket .product {
+  padding: 0;
+  margin: 0;
+  border-bottom: 1px solid black;
+}
+/* line 82, ../sass/main.scss */
+.basket .product h3 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 0.5rem 0;
+}
+/* line 88, ../sass/main.scss */
+.basket .product img {
+  float: left;
+  width: 30%;
+}
+/* line 93, ../sass/main.scss */
+.basket .product .info {
+  width: 70%;
+  float: left;
+  padding-left: 1rem;
+}
+/* line 99, ../sass/main.scss */
+.basket .product .price {
+  display: block;
+}

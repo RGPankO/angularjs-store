@@ -1,0 +1,6 @@
+<select class="order-by" name="order-by" ng-model="orderBy" ng-options="option for option in ['id','price','name']">
+</select>
+
+<a class="btn" ng-class="{'btn-primary':orderByAsc, 'btn-warning':!orderByAsc}" href="javascript:;" role="button" ng-click="changeOrder()">{{ orderByAsc ? 'Desc':'Asc'}}</a>
+|
+<div ng-repeat="category in categories" filter-category-item></div>

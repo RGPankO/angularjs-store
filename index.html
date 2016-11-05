@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="storeApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body ng-controller="StoreController" ng-init="getAllProducts()">
+    <section class="container">
+        <div class="row">
+            <header>
+                <ul class="main-menu">
+                    <li>Home</li>
+                    <li>Groceries</li>
+                    <li>Special Offers</li>
+                    <li>Delivery Saver</li>
+                </ul>
+            </header>
+        </div>
+    </section>
+
+    <section class="container">
+        <div class="row">
+            <div class="col-sm-9">
+                <div products-listing ng-init="getAllProducts()"></div>
+            </div>
+            <div class="col-sm-3">
+                <div basket></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <!-- Include Angular Core -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular.js"></script>
+    <!-- Include Angular Route -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-route.js"></script>
+
+    <script src="app/app.js"></script>
+    <script src="app/filters/currencyConverter.js"></script>
+    <script src="app/services/productsProvider.js"></script>
+    <script src="app/services/basketService.js"></script>
+    <script src="app/services/currencyManipulator.js"></script>
+    <script src="app/controllers/storeController.js"></script>
+    <script src="app/controllers/basketController.js"></script>
+    <script src="app/controllers/productsController.js"></script>
+    <script src="app/directives/products/list/list.js"></script>
+    <script src="app/directives/products/item/item.js"></script>
+    <script src="app/directives/products/filter/filter.js"></script>
+    <script src="app/directives/basket/basket.js"></script>
+    <script src="app/directives/basket/item/item.js"></script>
+    <script src="app/directives/products/filter/categoryItem/categoryItem.js"></script>
+</body>
+</html>

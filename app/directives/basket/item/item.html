@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-sm-12">
+        <h3 class="title">{{product.name | limitTo: 20}}</h3>
+    </div>
+    <div class="col-sm-12">
+        <img src="http://placehold.it/100x100">
+        <div class="info">
+            <p class="group-add">
+                <span class="glyphicon glyphicon-plus" ng-click="amountIncrease(product)" aria-hidden="true"></span>
+                <input type="text" class="form-control amount" ng-model="product.inBasketAmount">
+                <span class="glyphicon glyphicon-minus" ng-click="amountDecrease(product)" aria-hidden="true"></span>
+                <span class="price">{{ product.price | CurrencyConverter:'£'}}</span>
+                <button type="submit" class="btn add-item btn-danger" ng-click="remove(product)">Remove</button>
+
+            </p>
+        </div>
+        <p>Total: {{ product.totalCost | CurrencyConverter:'£' }}</p>
+    </div>
+</div>

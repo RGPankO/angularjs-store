@@ -1,0 +1,6 @@
+<div class="product-filters" product-filter></div>
+<div class="products" ng-if="products">
+    <div class="product" ng-repeat="product in products | orderBy: orderBy:orderByAsc | filter: filterByCategories" ng-class="{'in-basket': product.inBasket}" ng-init="resetAmount(product)" product-item>
+
+    </div>
+</div>
